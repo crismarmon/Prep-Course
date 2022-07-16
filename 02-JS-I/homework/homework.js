@@ -103,7 +103,7 @@ function mayorQueCincuenta(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if (num>50){
-    retur true
+    return true
   }
   else return false
 }
@@ -120,7 +120,10 @@ function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-  
+  if (num % 2 == 0){
+    return true
+  }
+  else return false
 }
 
 function esImpar(num) {
@@ -128,19 +131,26 @@ function esImpar(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
   
+    if (num % 2 == 0){
+      return false
+    }
+    else return true
 }
 
 function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
-  
-}
+  var num =Math.pow(num,2)
+  return num
+  }
+
 
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
-  
+  var num =Math.pow(num,3)
+  return num
 }
 
 function elevar(num, exponent) {
@@ -185,8 +195,8 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  combinarNombres(nombre+ apellido);
-  
+  combinarNombres(nombre + apellido);
+  return combinarNombres;
 }
 
 function obtenerSaludo(nombre) {
