@@ -252,9 +252,11 @@ function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
-  var euro = 1.20 * euro
+  var dolar = 1.20 * euro
 
-  return euro
+  return ('tu cambio de '+ euro +' euros' +
+  ' es de '+ dolar+ ' dolares.');
+
 }
 
 
